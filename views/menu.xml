@@ -1,0 +1,22 @@
+<odoo>
+
+    <!-- ROOT MENU -->
+    <menuitem id="menu_employee_root"
+              name="Employee Data"
+              web_icon="employee_data,static/description/icon.png"
+              sequence="10"/>
+
+    <!-- PARENT MENU -->
+    <menuitem id="menu_employee_main"
+              name="Employee Management"
+              parent="menu_employee_root"
+              sequence="1"/>
+
+    <!-- CHILD MENU -->
+    <menuitem id="menu_employee_list"
+              name="Employee List"
+              parent="menu_employee_main"
+              action="action_employee_data"
+              sequence="1"/>
+
+</odoo>
